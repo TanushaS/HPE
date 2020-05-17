@@ -1,0 +1,70 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+         "context_set": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+         "context_set": [""]
+        },
+       {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?"],
+         "responses": ["You can call me Tim.", "I'm Tim!", "I'm Tim aka Tech With Tim."],
+         "context_set":[""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag":"server",
+         "patterns":["Is Windows Server 2008 Server Core appropriate for a SQL Server instance?"],
+         "responses":["The Windows Server 2008 Core edition can:Run the file server role.Run the Hyper-V virtualization server role.Run the           Directory Services role.Run the DHCP server role."],
+         "context_set":[""]
+         },
+         {"tag":"API",
+          "patterns":["Clearpass is extended to IT systems using which API?"],
+          "responses":["REST based API"],
+          "context_set":[""]
+         },
+         {"tag":"browser",
+          "patterns":["Which browsers are supported for ClearPass?"],
+          "responses":["Mozilla Firefox,Google Chrome,Apple safari,Microsoft Internet Explorer"],
+          "context_set":[""]
+         },
+         {"tag":"virtualization",
+          "patterns":["Which  virtualization platforms  is supported by Clearpass?"],
+          "responses":["VMware vSphere Hypervisor (ESXi), Microsoft Hyper V, and Amazon AWS (EC2)"],
+          "context_set":[""]
+         },
+         {"tag":"authentication",
+          "patterns":["name the authentication/authorization sources used by clearpass","Which are the authentication protocols used for                employee access","which protocol is used by the  NAS  to authenticate the user"],
+          "responses":["AD, LDAP, and SQL dB","PEAP, EAP-FAST, EAP-TLS, EAP-TTLS, and EAP-PEAP-Public","RADIUS protocol"],
+          "context_set":[""]
+         },
+         {"tag":"clearpass",
+          "patterns":["Name the identity stores supported by Clearpass?","does Clearpass use ipv6 or ipv4 addressing","what is ClearPass                C1000 Hardware Appliance","how many sessioons can  be provided by ClearPass C2000 Hardware Appliance","Which standard the clearpass Guest is built on?","Which network connectivity is provisioned for Clearpass Guest?"],
+          "responses":["Built-in SQL store,Built-in SQL store, static hosts list","Ipv6","It is a RADIUS/ TACACS+ server that provides                 advanced policy control for up to 500 simultaneous sessions.","5000 simultaneous sessions.","AAA framework which consisting on authentication,authorization, and accounting components","VLAN selection, IP address, and hostname"],
+          "context_set":[""]
+         },
+         {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is             offered"],
+         "responses": ["I can guide you through technical questions,questions reletated to pdf file that has uploaded", "Offering support             for technical questions, answers are provided for technical questions"],
+         "context": [""]
+        },
+    {"tag":"cookies",
+     "patterns":["What are cookies?","What are cookies used for?"],
+     "responses":["Cookies are small text files that are placed on a user’s computer by Web sites the user visits","Cookies are used  to make Web sites work, or work more efficiently, as well as to provide information to the owners"],
+     "context": [""]
+    
+    }
+
+   ]
+}
