@@ -1,8 +1,7 @@
-#text=input("Enter the filename:")
 from math import log
 from textblob import TextBlob
 l=[]
-words = open("dict.txt").read().split()
+words = open("F:/upload/uploads/dict.txt").read().split()
 wordcost = dict((k, log((i+1)*log(len(words)))) for i,k in enumerate(words))
 maxword = max(len(x) for x in words)
 
@@ -77,4 +76,3 @@ def main(l1):
     return output
 if __name__=="__main__":
     i=main('What col thing to say')
-              
